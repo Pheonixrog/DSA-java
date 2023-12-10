@@ -3,8 +3,9 @@ public class ceilingandfloor {
     public static void main(String[] args) {
         int[] a = { 1, 8, 15, 86, 99, 120 };
         int b= a.length;
-        int target = 79;
+        int target = 100;
         System.out.println(ceiling(a, b,target));
+        System.out.println(floor(a, b, target));
 
     }
 
@@ -63,10 +64,8 @@ public class ceilingandfloor {
                 }
 
             }
-            if (start < b) {
-                System.out.println("Solution is " + start);
-                return start;
-            }
+
+            return end;
            
         }
        
