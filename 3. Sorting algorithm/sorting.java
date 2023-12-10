@@ -6,9 +6,47 @@ public class sorting {
         int[] arr = { 3, 7, 1, 9, 2 };
         bubblesort(arr);
         System.out.println(Arrays.toString(arr));
+        selectionsort(arr);
+        System.out.println(Arrays.toString(arr));
+
+
+        
+        
+        
 
     }
-    //Bubble sort function
+    //Selection sort
+    public static void selectionsort(int[] arr){
+        for (int i = 0; i < arr.length; i++) {
+            int start =0;
+            int end=arr.length-i-1;
+
+            
+            int maxIndex = maxElement(arr,start,end );
+            swap(arr,  maxIndex ,end);
+
+
+
+            
+        }
+
+    }
+    //Finding max element
+    public static int maxElement(int[] array ,int start,int end) {
+        int maxIndex =  start;
+        
+        for (int i = start  ; i <= end; i++) {
+            if (array[i]>array[maxIndex]) {
+                maxIndex =i;
+                
+            }
+            
+        }
+        return maxIndex;
+    }
+
+
+ //Bubble sort function
     public static void bubblesort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
