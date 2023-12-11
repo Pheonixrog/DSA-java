@@ -7,7 +7,7 @@ public class linearsearch {
             int b = sc.nextInt();
             int[] a = new int[b];
 
-            for(int i = 0 ; i<b ; i++){
+            for (int i = 0; i < b; i++) {
                 a[i] = sc.nextInt();
 
             }
@@ -16,18 +16,13 @@ public class linearsearch {
             int target = sc.nextInt();
 
             for (int i = 0; i < b; i++) {
-                if(a[i] == target){
+                if (a[i] == target) {
                     System.out.println("elemnet found at " + a[i]);
                 }
-                
+
             }
         }
 
-
-
-
-
-        
     }
-    
+
 }
