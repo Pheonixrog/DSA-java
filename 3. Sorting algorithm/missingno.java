@@ -1,11 +1,11 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class missingno {
     public static void main(String[] args) {
-        int[] arr = {0,1,4,3};
+        int[] arr = {0,1,4,3,6,8};
         cyclicsort(arr);
         System.out.println(Arrays.toString(arr));
-        missing(arr);
+        System.out.println(missing(arr));
 
         
     }
@@ -13,7 +13,7 @@ public class missingno {
     public static void cyclicsort(int[] arr){
         for (int i = 0; i < arr.length; i++) {
 
-            while( arr[i] != i && arr[i] > arr.length){
+            while( arr[i] != i && arr[i] < arr.length){
                 
                 int temp = arr[i];
                 arr[i] =arr[temp];
@@ -23,14 +23,16 @@ public class missingno {
         }
     }
 
-    public static void missing(int[] arr){
+    public static List<Integer> missing(int[] arr){
+        List<Integer> ls = new ArrayList();
         for (int i = 0; i < arr.length; i++) {
             if (i != arr[i] ) {
-                System.out.println(arr[i]);
+                ls.add(arr[i]);
                 
             }
             
         }
+        return ls;
 
     }
     
