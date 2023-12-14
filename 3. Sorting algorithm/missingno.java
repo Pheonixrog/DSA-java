@@ -2,7 +2,7 @@ import java.util.*;
 
 public class missingno {
     public static void main(String[] args) {
-        int[] arr = {0,1,4,3,6,8};
+        int[] arr = {0,1,4,6,5,8};
         cyclicsort(arr);
         System.out.println(Arrays.toString(arr));
         System.out.println(missing(arr));
@@ -24,10 +24,10 @@ public class missingno {
     }
 
     public static List<Integer> missing(int[] arr){
-        List<Integer> ls = new ArrayList();
+        List<Integer> ls = new ArrayList<>();
         for (int i = 0; i < arr.length; i++) {
             if (i != arr[i] ) {
-                ls.add(arr[i]);
+                ls.add(i);
                 
             }
             
