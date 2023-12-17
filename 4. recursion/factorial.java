@@ -2,12 +2,13 @@ import java.util.*;
 
 public class factorial {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter the number");
-        int a = sc.nextInt();
-      
-        System.out.println(fact(a));
-        System.out.println(summation(a));
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("enter the number");
+            int a = sc.nextInt();
+     
+            System.out.println(fact(a));
+            System.out.println(summation(a));
+        }
         
 
     }
