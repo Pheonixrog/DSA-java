@@ -1,6 +1,6 @@
 public class sumofdigit {
     public static void main(String[] args) {
-      int n = 3564; 
+      int n = 3504; 
       System.out.println(sumofDigit(n)); 
       System.out.println(mulofDigit(n));
 
