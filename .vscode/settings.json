@@ -5,6 +5,12 @@
         "2. Binarysearch",
         "1. Linear search",
         "4. recursion",
-        "6. oops"
+        "6. oops",
+        "1.Array",
+        "2. Linked list",
+        "3. oops"
+    ],
+    "java.configuration.runtimes": [
+        
     ]
 }
