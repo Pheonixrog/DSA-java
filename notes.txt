@@ -1,0 +1,18 @@
+-------------------------------------------STRINGS------------------------------------------------------------
+* immutable
+* (name1).equal(name2)
+* name.charAt(0)
+* name.split(" ")
+
+preety printing :---
+'a' + 'b' = 195
+"a" + "b" =ab
+'a' + 3 = 100
+(char)('a' +3)=d
+
+String Builder:---
+StringBuilder sb = new StringBuilder();                          str->Tnt
+sb.toString                                                    Integer.valueOf()
+sb.append(ch)
+sb.indexOf(a)
+
